@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js" type="text/javascript"></script>  
+    <script src="canvas.js" type="text/javascript"></script> 
+    <script>
+        $(document).ready(function() {
+            initWorld();
+            var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+            requestAnimationFrame(drawWorld);
+            $(document).click(onClick);
+        });
+    </script>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="1200" height="800"></canvas>
+  </body>
+</html>
